@@ -1,7 +1,13 @@
 WORKPLACE="$HOME/workplace/SakuinSeizouki"
+
+WORKSPACE="$WORKPLACE/SakuinSeizoukiApi"
+(
+  cd "$WORKSPACE"
+  ./scripts/gen.sh
+)
+
 WORKSPACE="$WORKPLACE/SakuinSeizoukiApiTests"
 SCHEMA_PATH="$WORKPLACE/SakuinSeizoukiApi/api/openapi.yaml"
-
 (
   cd "$WORKSPACE"
   rm -rf openapi_client
